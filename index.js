@@ -7,7 +7,6 @@ context.fillRect(0, 0, canvas.width, canvas.height);
 
 
 
-
 // * Step 2 : Create a player and enemy and background
 const gravity = 0.7;
 const background = new Sprite({
