@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./assets/favicon2.ico" type="image/x-icon">
+    <title>Castle Battle</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Health Bar -->
+        <div class="health-bar">
+            <div>
+                <img class="player-avatar" src="./assets/player-avatar.png" alt="avatar">
+            </div>
+            <!-- Player health -->
+            <div class="player-health-container">
+                <p class="player-name">WARRIOR</p>
+                <div class="player-org-health"></div>
+                <div id="playerHealth" class="player-health"></div>
+            </div>
+            <!-- Timer -->
+            <div id="timer" class="timer">
+                10
+            </div>
+            <!-- Enemy health -->
+            <div class="enemy-health-container">
+                <p class="enemy-name">WIZARD</p>
+                <div class="enemy-org-health"></div>
+                <div id="enemyHealth" class="enemy-health"></div>
+
+            </div>
+            <div>
+                <img class="enemy-avatar" src="./assets/enemy-avatar.png" alt="avatar">
+            </div>
+        </div>
+        <div id="displayText" class="display-text">
+        </div>
+        <canvas></canvas>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/classes.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

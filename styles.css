@@ -1,0 +1,104 @@
+*{
+    font-family: 'Press Start 2P', cursive;
+    box-sizing:border-box;
+}
+body{
+    background-color: #171818;
+}
+.container{
+    position: relative;
+    display:inline-block;
+}
+.health-bar{
+    position:absolute;
+    display:flex;
+    width:100%;
+    align-items:center;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.player-health-container{
+    border-radius:20px;
+    position:relative ;
+    height: 20px;
+    width: 100%;
+    display:flex;
+    justify-content:flex-end;
+}
+.player-name{
+    color:  #ffd698; 
+    font-size: 20px;
+    padding : 10px 0 0 10px;
+}
+.player-org-health{
+    border-radius:20px;
+    background-color: #00000000;
+    height: 20px;
+    width:100%;
+}
+.player-health{
+    border-radius:20px;
+    position:absolute;
+    background-image: linear-gradient(to top, #f3962b,#f89421,#fcb529,#fee737);
+    top:0;
+    right:0;
+    bottom: 0;
+    width:100%;
+}
+
+
+.timer{
+    background-color: #00000000;
+    font-size: 30px;
+    color: #ffd698;
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.enemy-health-container{
+    border-radius:20px;
+    position:relative ;
+    height: 20px;
+    width: 100%;
+}
+.enemy-name{
+    color: #ffd698; 
+    font-size: 20px;
+    padding-left: 430px;
+    padding-top: 10px;
+}
+.enemy-org-health{
+    border-radius:20px;
+    background-color: #00000000;
+    height: 20px;
+}
+.enemy-health{
+    border-radius:20px;
+    position:absolute;
+    background-image: linear-gradient(to top, #f3962b,#f89421,#fcb529,#fee737);
+    top:0;
+    right:0;
+    bottom: 0;
+    left:0;
+}
+
+#displayText{  
+    position:absolute;
+    background-color: rgba(0,0,0,0.4);
+    color: #ffd698;
+    justify-content: center;
+    align-items: center;
+    font-size:50px;
+    top:0;
+    right:0;
+    bottom: 0;
+    left:0;
+    display:none;
+}
